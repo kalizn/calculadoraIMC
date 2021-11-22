@@ -16,7 +16,7 @@ export default function App() {
     } else if (imc >= 24.9 && imc < 34.9) {
       alert('Você está abaixo do peso - IMC = ' + imc.toFixed(2));
     } else if (imc >= 34.9) {
-      alert();
+      alert('Você está acima do peso - IMC = ' + imc.toFixed(2));
     }
 
   }
