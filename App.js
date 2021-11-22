@@ -10,7 +10,6 @@ export default function App() {
     const imc = peso / (alt*alt);
 
     
-    
     if (imc < 18.6) {
       alert('Você está abaixo do peso - IMC = ' + imc.toFixed(2));
     } else if (imc >= 18.6 && imc < 24.9) {
