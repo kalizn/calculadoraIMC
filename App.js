@@ -8,7 +8,16 @@ export default function App() {
   function executarCalculos() {
     const alt = altura / 100;
     const imc = peso / (alt*alt);
-    alert(imc.toFixed(2));
+    
+    if (imc < 18.6) {
+      alert('Você está abaixo do peso - IMC = ' + imc.toFixed(2));
+    } else if (imc >= 18.6 && imc < 24.9) {
+      alert('Você está com o peso ideal - IMC = ' + imc.toFixed(2));
+    } else if (imc >= 24.9 && imc < 34.9) {
+      alert('Você está abaixo do peso - IMC = ' + imc.toFixed(2));
+    } else if (imc >= 34.9) {
+      alert();
+    }
 
   }
 
